@@ -64,9 +64,9 @@ def sendQnA(event, mtext):  #QnA
     conn = http.client.HTTPSConnection(host)
     conn.request ("POST", method, content, headers)
     response = conn.getresponse ()
-    result = response.read()  #取得結果
-    result1 = json.loads(result)  #轉為JSON格式
-   
+    result = json.loads(response.read())
+    result1 = result['answers'][0]['answer']
+  
     if 'No good match' in result1:
         text1 = '很抱歉，資料庫中無適當解答！\n請再輸入問題。'
         #將沒有解答的問題寫入資料庫
