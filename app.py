@@ -72,7 +72,7 @@ def sendQnA(event, mtext):  #QnA
         #將沒有解答的問題寫入資料庫
 
     else:
-        result2 = result1[2:]  #移除「A：」
+        result2 = result1  #移除「A：」
         text1 = result2
     message = TextSendMessage(
         text = text1
