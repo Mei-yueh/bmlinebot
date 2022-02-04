@@ -37,4 +37,4 @@
 
 <img src="https://github.com/hsuanchi/Flask-LINE-Bot-Heroku/blob/main/img/custom%20readme-flask-line-bot.png" width="800px" height="auto">
 
-本篇文章同步刊登於 [ [Flask – LINE Bot 教學] Heroku 一鍵自動部署 - Max行銷誌](https://www.maxlist.xyz/2020/11/30/flask-line-bot-deploy-heroku/)，如果有遇到任何問題，歡迎私訊或留言，我會盡快回覆您
+
