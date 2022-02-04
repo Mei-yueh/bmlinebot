@@ -38,19 +38,6 @@ def handle_message(event):
     else:
         sendQnA(event, mtext)
 
-def sendUse(event):  #使用說明
-    try:
-        text1 ='''
-這是台大醫院的疑難解答，
-請輸入關於台大醫院相關問題。
-               '''
-        message = TextSendMessage(
-            text = text1
-        )
-        line_bot_api.reply_message(event.reply_token,message)
-    except:
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='發生錯誤！'))
-
 def sendQnA(event, mtext):  #QnA
     question = {
         'question': mtext,
