@@ -55,7 +55,7 @@ def sendQnA(event, mtext):  #QnA
     result1 = result['answers'][0]['answer']
   
     if 'No good match' in result1:
-        text1 = '很抱歉，資料庫中無適當解答！\n請再輸入問題。'
+        text1 = '很抱歉，資料庫中無適當解答！請再輸入問題或來電由專人為您服務，電話：(06)216-0216，國稅與地方稅免付費電話：0800-000-321（限辦公時間提供服務）'
         #將沒有解答的問題寫入資料庫
 
     else:
